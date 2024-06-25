@@ -1,0 +1,26 @@
+Differences between modern and old C++:
+
+In variables definition and constants:
+	Modern C++ versions changed the way to declare and initialize C++ variables:
+	Example of modern C++: 
+		Declare and initialize an age variable to 0: int age {};
+		Declare and initialize an age variable to a value: int age {25};
+
+	Example of old C++:
+		Declare and initialize an age variable to 0: int age = 0;
+		Declare and initialize an age variable to a value: int age = 25;
+
+
+In Statements and Operators:
+	Modern C++ versions changed the way to do conversions from one type of variable to another:
+	Example of modern C++:
+		static_cast<type>
+		Cast an integer value to a double: average = static_cast<double>(total) / count;
+
+	Example of old C++:
+		Cast an integer value to a double: average = (double) total / count;
+		
+	Difference:
+		Modern C++ cast it's a little bit more restrictive than the old C++. The old cast just assumes the value can be converted, but the static_cast double check if the value can be converted to the new type.
+
+
