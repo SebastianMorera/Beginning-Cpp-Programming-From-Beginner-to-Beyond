@@ -21,6 +21,27 @@ In Statements and Operators:
 		Cast an integer value to a double: average = (double) total / count;
 		
 	Difference:
-		Modern C++ cast it's a little bit more restrictive than the old C++. The old cast just assumes the value can be converted, but the static_cast double check if the value can be converted to the new type.
+		Modern C++ cast it's a little bit more restrictive than the old C++. The old cast just assumes the value can be converted, but the static_cast double check if the 		value can be converted to the new type.
 
+In Controlling Program Flow:
+	In C++11 Range-based for Loop where introduced. This is useful when working with collections, i.e. arrays or vectors.
+	Example of Range-based for Loop:
+		for (var_tye var_name: sequence)
+			statement; // can use varn_name
 
+	Example with array values:
+		int scores [] {100, 90, 97};
+
+		for (auto score: scores)
+			cout << score << endl;
+	
+	Example with vector values:
+		vector<double> temps {87.2, 77.1, 80.0, 72.5};
+
+		double average_temp {};
+		double running_sum {};
+
+		for (auto temp: temps)
+			running_sum += temp;
+
+		average_temp = running_sum / temps.size();
