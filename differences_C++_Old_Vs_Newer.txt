@@ -45,3 +45,7 @@ In Controlling Program Flow:
 			running_sum += temp;
 
 		average_temp = running_sum / temps.size();
+
+Pointers and References:
+	In C++ 11, nullptr was introduced. Why? Because all pointers need to be initialized. If you don't initialize a pointer to point to a variable or function then you
+	you should initialized it to nullptr. It will initialize it to 'point nowhere', if not uninitialized pointers can contain garbage data and can 'point anywhere'. 
